@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --primery-font-family: 'Roboto', sans-serif;
   --logo-font-family: 'Raleway', sans-serif;
@@ -393,14 +403,7 @@ p {
   padding: 6px 22px;
   border: 0px;
   border-radius: 4px;
-  background: #f5f4fa;
-}
 
-.filters-item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.filters-list .filters-button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -410,21 +413,35 @@ p {
   color: var(--title-text-color);
 }
 
-.filters-list .filters-button:hover,
-.filters-list .filters-button:focus {
+.filters-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filters-button:hover,
+.filters-button:focus {
   background-color: var(--accent-color);
   color: var(--primery-white-color);
 }
 
 /* Working */
 
-.working-item {
-  width: 370px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
+.working-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
+.working-item {
+  width: 370px;
+  /* width: calc((100%-60px) / 3); */
+}
+
+.working-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.working-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
 .working-title {
   margin-bottom: 4px;
   font-weight: 700;
