@@ -1,0 +1,395 @@
+:root {
+  --primery-font-family: 'Roboto', sans-serif;
+  --logo-font-family: 'Raleway', sans-serif;
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primery-white-color: #ffffff;
+  --secondary-white-color: rgba(255, 255, 255, 0.6);
+  --copyright-white-color: rgba(255, 255, 255, 0.4);
+  --primery-background-color: #e5e5e5;
+  --primery-black-color: #000000;
+  --hero-background-color: rgba(47, 48, 58, 0.8);
+  --footer-background-color: #2f303a;
+}
+
+body {
+  background-color: var(--primery-background-color);
+  font-family: var(--primery-font-family);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--primery-text-color);
+}
+
+/* УТИЛИТЫ */
+
+.list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* Header */
+
+.header {
+  background: var(--primery-white-color);
+}
+
+/* CONTAINER */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+  outline: 2px solid tomato;
+}
+
+.container-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo */
+
+.logo {
+  display: block;
+  font-family: var(--logo-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--primery-black-color);
+}
+
+.logo-blue {
+  color: var(--accent-color);
+}
+
+.footer .logo {
+  color: var(--primery-white-color);
+}
+
+/* Navigation */
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  margin-left: 85px;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation-list .navigation-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--title-text-color);
+}
+
+.navigation-list .navigation-link:hover,
+.navigation-list .navigation-link:focus,
+.navigation-list .navigation-link.current {
+  color: var(--accent-color);
+}
+
+/* Address */
+
+.header-address {
+  margin-left: auto;
+}
+
+.address-list {
+  display: flex;
+}
+
+.address-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.address-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--primery-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
+}
+
+.footer-address .address-text {
+  font-style: normal;
+  color: var(--secondary-white-color);
+}
+
+.address-map {
+  color: var(--primery-white-color);
+}
+
+/* Hero */
+
+.hero {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primery-white-color);
+}
+
+/* Section */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  outline: 2px solid purple;
+}
+
+.subsection {
+  padding-bottom: 0;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.hidden {
+  display: none;
+}
+
+/* FEATURES */
+
+.features-item {
+  width: 270px;
+  height: 251px;
+}
+
+.features-img {
+  margin: 25px 100px 55px;
+}
+
+.features-title {
+  margin-top: 0mm;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.features-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* OCCUPATION */
+
+.occupation-title {
+  display: inline-block;
+
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primery-white-color);
+}
+
+.occupation-item {
+  width: 370px;
+  text-align: center;
+}
+
+/* TEAM */
+
+.team {
+  background: #f5f4fa;
+}
+
+.team-item {
+  width: 270px;
+  text-align: center;
+}
+
+.team-img {
+  margin-bottom: 30px;
+}
+
+.team-name {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--title-text-color);
+}
+
+.team-position {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+/* CUSTOMERS */
+
+.customers-item {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  width: 170px;
+  height: 90px;
+}
+
+/* Button */
+
+.button {
+  display: inline-block;
+  padding: 10px 32px;
+  border-color: transparent;
+  border-radius: 4px;
+  min-width: 200px;
+  font-family: var(--primery-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  align-items: center;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--primery-white-color);
+}
+
+/* Footer */
+
+.address-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.a-call-subtitle {
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primery-white-color);
+}
+
+.footer {
+  background-color: var(--footer-background-color);
+}
+
+.form-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.copyright {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 12px;
+  color: var(--copyright-white-color);
+}
+
+/* Filter */
+
+.filters-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filters-button {
+  display: inline-block;
+  padding: 6px 22px;
+  border: 0px;
+  border-radius: 4px;
+  background: #f5f4fa;
+}
+
+.filters-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filters-list .filters-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  background: #f5f4fa;
+  color: var(--title-text-color);
+}
+
+.filters-list .filters-button:hover,
+.filters-list .filters-button:focus {
+  background-color: var(--accent-color);
+  color: var(--primery-white-color);
+}
+
+/* Working */
+
+.working-item {
+  width: 370px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+}
+
+.working-title {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.working-text {
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--primery-text-color);
+}
+
+.working-second-text {
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--primery-white-color);
+}
