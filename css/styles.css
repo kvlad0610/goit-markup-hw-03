@@ -323,22 +323,30 @@ p {
   display: flex;
 }
 
-.customers-item {
+/* .customers-item {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
   width: calc((100% - 150px) / 6);
-}
+} */
 
 .customers-item:not(:last-child) {
   margin-right: 30px;
 }
 
 .customers-link {
-  display: block;
-  text-align: center;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  display: flex;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  border: 1px solid #2196f3;
 }
 
 /* Button */
@@ -357,6 +365,7 @@ p {
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--primery-white-color);
+  cursor: pointer;
 }
 
 .forma .button::after {
