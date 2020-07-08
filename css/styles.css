@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  background-color: var(--primery-background-color);
+  /* background-color: var(--primery-background-color); */
   font-family: var(--primery-font-family);
   font-size: 14px;
   line-height: 1.7;
@@ -54,9 +54,9 @@ p {
 
 /* Header */
 
-.header {
+/* .header {
   background: var(--primery-white-color);
-}
+} */
 
 /* CONTAINER */
 
@@ -170,6 +170,7 @@ p {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-color: var(--primery-background-color);
 }
 
 .hero-title {
@@ -224,8 +225,11 @@ p {
 }
 
 .features-img {
+  box-sizing: content-box;
   padding: 25px 100px;
   margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
 }
 
 .features-title {
@@ -254,7 +258,7 @@ p {
 
   line-height: 1.14;
   text-transform: uppercase;
-  color: var(--primery-white-color);
+  /* color: var(--primery-white-color); */
 }
 
 .occupation-item {
@@ -447,6 +451,10 @@ p {
 .working-item {
   /* width: 370px; */
   width: calc((100% - 60px) / 3);
+}
+
+.working-link {
+  display: block;
 }
 
 .working-item:not(:nth-last-child(-n + 3)) {
