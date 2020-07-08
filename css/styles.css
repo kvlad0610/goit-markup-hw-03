@@ -42,6 +42,7 @@ body {
 
 .link {
   text-decoration: none;
+  display: block;
 }
 
 h1,
@@ -343,9 +344,8 @@ p {
 /* Button */
 
 .button {
-  display: inline-block;
+  display: inline-flex;
   padding: 10px 32px;
-  border-color: transparent;
   border-radius: 4px;
   min-width: 200px;
   font-family: var(--primery-font-family);
@@ -357,6 +357,15 @@ p {
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--primery-white-color);
+}
+
+.forma .button::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icon-send.svg);
+  background-size: contain;
+  margin-left: 10px;
 }
 
 /* Footer */
@@ -451,10 +460,6 @@ p {
 .working-item {
   /* width: 370px; */
   width: calc((100% - 60px) / 3);
-}
-
-.working-link {
-  display: block;
 }
 
 .working-item:not(:nth-last-child(-n + 3)) {
