@@ -407,6 +407,10 @@ p {
   cursor: pointer;
 }
 
+.forma .button {
+  margin-left: 12px;
+}
+
 .forma .button::after {
   content: '';
   width: 24px;
@@ -456,9 +460,12 @@ p {
 }
 
 .footer {
-  padding-top: 57px;
-  padding-bottom: 21px;
   background-color: var(--footer-background-color);
+}
+
+.footer .container-nav {
+  padding-top: 45px;
+  padding-bottom: 28px;
 }
 
 .forma {
@@ -470,9 +477,13 @@ p {
   margin-bottom: 0;
 }
 
+.copyright-container {
+  padding-top: 18px;
+  padding-bottom: 21px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .copyright {
-  margin-top: 0;
-  margin-bottom: 0;
   text-align: center;
   font-size: 12px;
   color: var(--copyright-white-color);
