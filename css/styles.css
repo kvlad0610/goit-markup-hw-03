@@ -392,6 +392,8 @@ p {
   line-height: 1.18;
 }
 
+/* SOCIAL */
+
 .social-list {
   display: flex;
   justify-content: center;
@@ -414,6 +416,11 @@ p {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
 .instagram {
   background-image: url('../images/instagram.svg');
 }
@@ -428,6 +435,22 @@ p {
 
 .linkedin {
   background-image: url('../images/linkedin.svg');
+}
+
+.footer .instagram {
+  background-image: url('../images/instagram-white.svg');
+}
+
+.footer .twitter {
+  background-image: url('../images/twitter-white.svg');
+}
+
+.footer .facebook {
+  background-image: url('../images/facebook-white.svg');
+}
+
+.footer .linkedin {
+  background-image: url('../images/linkedin-white.svg');
 }
 
 /* CUSTOMERS */
